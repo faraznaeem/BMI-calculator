@@ -8,7 +8,12 @@ function Person(attr) {
   //this.bmiMessage = "Overweight"
 //};
 
-Person.prototype.calculate_bmi = function() {
+Person.prototype.calculate_bmi = function(argument) {
   calculator = new BMICalculator();
-  calculator.metric_bmi(this);
+  if (argument === 'metric') {
+    calculator.metric_bmi(this);
+  } else {
+    calculator.imperial_bmi(this);
+  }
+
 };

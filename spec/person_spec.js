@@ -1,4 +1,4 @@
-describe("Person", function() {
+describe("1 Person", function() {
   var person;
 
   beforeEach(function() {
